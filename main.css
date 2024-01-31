@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;700&family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --color-background: hsl(212, 45%, 89%);
+  --color-tile-background: hsl(0, 0%, 100%);
+  --color-text: hsl(212, 15%, 55%);
+  --color-title: hsl(218, 44%, 22%);
+
+  --font-family-default: "Outfit";
+  --font-size-default: 15px;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fw-size-800: 1.75rem;
+  --fw-size-400: 1.25rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-default);
+  background-color: var(--color-background);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.tile {
+  width: 25rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  background-color: var(--color-tile-background);
+  border-radius: 1.5rem;
+  text-align: center;
+}
+
+.tile__image {
+  border-radius: 1rem;
+}
+
+.tile__title {
+  font-weight: var(--fw-bold);
+  font-size: var(--fw-size-800);
+  color: var(--color-title);
+}
+
+.tile__description {
+  font-weight: var(--fw-regular);
+  font-size: var(--fw-size-400);
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
