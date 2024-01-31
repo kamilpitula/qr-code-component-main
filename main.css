@@ -68,5 +68,5 @@ body {
   font-weight: var(--fw-regular);
   font-size: var(--fw-size-400);
   color: var(--color-text);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
